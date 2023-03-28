@@ -1,0 +1,5 @@
+<form action="{% url 'upload_video' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="video_file" accept="video/*">
+    <button type="submit">Submit</button>
+</form>
